@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="calc.css">
+  <title>calculator</title>
+</head>
+<body>
+  <span>
+    <div id="container">
+      <div id="container_display">
+        <h3>simple Calculator</h3>
+        <div id="display">
+          <div id="calculation"></div>
+          <div id="result"></div>
+        </div>
+      </div>
+      
+      <div id="button" class="row_1">
+         <input type="button" id="AC" class="operator" value="AC" onclick="button_clicked('AC')">
+         <input type="button" id="AC" class="operator" value="←" onclick="Back()">
+         <input type="button" id="AC" class="operator" value="%" onclick="button_clicked('%')" >
+         <input type="button" id="AC" class="operator" value="÷" onclick="button_clicked('/')">
+        </div>
+         <div id="button" class="row_2">
+          <input type="button" id="AC" class="" value="7" onclick="button_clicked('7')">
+          <input type="button" id="AC" class="" value="8"onclick="button_clicked('8')">
+          <input type="button" id="AC" class="" value="9" onclick="button_clicked('9')">
+          <input type="button" id="AC" class="operator" value="x" onclick="button_clicked('*')"> 
+         </div>
+         <div id="button" class="row_3">
+          <input type="button" id="AC" class="" value="4" onclick="button_clicked('4')">
+          <input type="button" id="AC" class="" value="5" onclick="button_clicked('5')">
+          <input type="button" id="AC" class="" value="6" onclick="button_clicked('6')">
+          <input type="button" id="AC" class="operator" value="-" onclick="button_clicked('-')">
+         </div>
+         <div id="button" class="row_4">
+          <input type="button" id="AC" class="" value="1" onclick="button_clicked('1')">
+          <input type="button" id="AC" class="" value="2" onclick="button_clicked('2')">
+          <input type="button" id="AC" class="" value="3" onclick="button_clicked('3')">
+          <input type="button" id="AC" class="operator" value="+" onclick="button_clicked('+')">
+         </div>
+          <div id="button" class="row_5">
+            <input type="button" id="AC" class="operator" value="±" onclick=" negative()">
+            <input type="button" id="AC" class="" value="0" onclick="button_clicked('0')">
+            <input type="button" id="AC" class="operator" value="." onclick="button_clicked('.')">
+             <input type="button" id="AC" class="operator" value="=" onclick="result()"> 
+          </div>
+           
+      </div>
+
+    </div>
+    
+  </span>
+  <script src="calc.js"></script>
+</body>
+</html>
